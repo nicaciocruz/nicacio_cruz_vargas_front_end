@@ -1,0 +1,26 @@
+{
+  "name": "pruebanode",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "description": "pruebanode",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.0",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "mime": "^2.5.2",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.2",
+    "read-excel-file": "^5.0.0",
+    "request": "^2.88.2",
+    "serve-favicon": "^2.3.0",
+    "soap": "^0.40.0"
+  }
+}

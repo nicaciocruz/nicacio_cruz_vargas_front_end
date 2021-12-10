@@ -1,0 +1,3 @@
+C:\Users\Jose Andrade\source\repos\pruebanode\pruebanode\obj\Debug\pruebanode.njsprojAssemblyReference.cache
+C:\Users\Jose Andrade\source\repos\pruebanode\pruebanode\obj\Debug\pruebanode.njsproj.CoreCompileInputs.cache
+C:\Users\Jose Andrade\source\repos\pruebanode\pruebanode\bin\Microsoft.NodejsTools.WebRole.dll

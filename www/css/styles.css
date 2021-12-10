@@ -1,0 +1,64 @@
+.thumb-post img {
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.thumb-post-mini img {
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  margin-bottom: 1rem;
+}
+
+.vl {
+  border-left: 1px solid lightgrey;
+  height: auto;
+}
+
+.bg-pink {
+  background-color: #ffe6e6;
+}
+
+.bg-pink-dark {
+  background-color: #ff9999;
+}
+
+.splide {
+  max-width: 900px;
+}
+
+@media only screen and (max-width: 576px) {
+  .splide {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .splide {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .splide {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .splide {
+    max-width: 750px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .splide {
+    max-width: 900px;
+  }
+}

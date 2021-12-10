@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="es">
+
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- CSS de Bootstrap -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="assets/css/fresh-bootstrap-table.css" rel="stylesheet" />
+	<link href="assets/css/demo.css" rel="stylesheet" />
+  
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" >
+
+</head>
+<body>
+<br><br><br>
+
+	<br />
+
+	<div class="wrapper">
+		<!--   Creative Tim Branding   -->
+		<a href="https://www.tendencys.com">
+		  <div class="logo-container">
+			<div class="">
+			  <img src="https://www.tendencys.com/assets/images/logo.jpg">
+			</div>
+		  </div>
+		</a>
+	  
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			
+			  <div class="fresh-table full-color-azure">
+			
+			
+	  
+				<table id="fresh-table" class="table">
+				  <thead>
+					<th data-field="Number" >Number</th>
+					<th data-field="Name" data-sortable="true">Name</th>
+					<th data-field="actions">Opciones</th>
+	  
+				  
+	  
+	  
+				  </thead>
+				  <tbody id="contenedorElementos">
+				  </tbody>
+				</table>
+			  </div>
+	  
+			  
+		
+	  
+				
+			  
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<div class="modal fade" id="products" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<label id="Header">Productos</label>
+				</div>
+				<div class="modal-body">
+					<form id="form_set_data" >
+						<div class="form-row">
+							                  
+                        <div class="form-group col-md-2">
+                            <label for="SKU">Sku:</label>
+                            <input class="form-control" id="sku" name="SKU" type="text" placeholder="Sku" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="NAME">Name:</label>
+                            <input class="form-control" id="name" name="NAME" type="text" placeholder="Name" />
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="QUANTITY">Quantity:</label>
+                            <input class="form-control" id="quantity" name="QUANTITY" type="number" placeholder="Quantity" />
+                        </div>
+						<div class="form-group col-md-3">
+                            <label for="PRICE">Price:</label>
+                            <input class="form-control"  id="price" name="PRICE"  type="number" step="0.01" placeholder="Price" />
+                        </div>
+						
+						<div class="form-group col-md-1">
+							<input type="submit" class="btn btn-success" value="Agregar" />
+							
+                        </div>
+					</div>
+                   </form> <br><br>
+					<div class="fresh-table full-color-azure">
+					<table id="fresh-table_products" class="table">
+						<thead>
+						  <th data-field="skusku"  data-sortable="true">sku</th>
+						  <th data-field="name" data-sortable="true">name</th>
+						  <th data-field="quantity" data-sortable="true">quantity</th>
+						  <th data-field="price" data-sortable="true">price</th>
+						</thead>
+						<tbody id="contenedor_products">
+						</tbody>
+					  </table>
+				</div>
+			</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" id="myModalClose">  Cerrar</button>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
+  
+	<!--  Just for demo purpose, do not include in your project   -->
+	<script src="assets/js/demo/gsdk-switch.js"></script>
+	<script src="assets/js/demo/jquery.sharrre.js"></script>
+	<script src="assets/js/demo/demo.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
+<script src="http://momentjs.com/downloads/moment.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<!----script src="./js/conexion.js?v=1.0.0"></script-->
+	<script src="./js/cuentas.js?v=1.0.0" charset="UTF-8"></script>
+	<script>
+
+
+
+	</script>
+</body>
+</html>
